@@ -10,9 +10,9 @@
 		<meta name="medium" content="mult" />
 		<meta name="video_height" content="480"></meta>
 		<meta name="video_width" content="640"></meta>
-		<link rel="image_src" href="ProbaProbadata/thumbnail.jpg" />
+		<link rel="image_src" href="Proba12data/thumbnail.jpg" />
 		<!-- <meta name="directory" content="PATH/"></meta> -->
-		<!-- <link rel="target_url" href="ProbaProba.html" /> -->
+		<!-- <link rel="target_url" href="Proba12.html" /> -->
 		<meta name="generator" content="Panotour Pro V2.5.7 64bits" />
 
 		<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"/>
@@ -23,13 +23,17 @@
 			@media only screen and (min-device-width: 800px) { html { overflow:hidden; } }
 			* { padding: 0; margin: 0; }
 			html { height: 100%; }
-			body { height: 100%; overflow:hidden; }
-			div#container { height: 100%; min-height: 100%; width: 100%; margin: 0 auto; }
+			body { height: 100%; overflow:hidden; background-color:#ffffff; color:#000000; }
+			div#container { height: 100%; min-height: 100%; width: 90%; margin: 0 auto; }
 			div#tourDIV {
-				height:100%;
+				height:90%;
 				position:relative;
 				overflow:hidden;
 			}
+			h1.tourTitle{
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
 			div#panoDIV {
 				height:100%;
 				position:relative;
@@ -42,26 +46,26 @@
 			}
 		</style>
 				<!--[if !IE]><!-->
-		<script type="text/javascript" src="ProbaProbadata/lib/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="Proba12data/lib/jquery-2.1.1.min.js"></script>
 		<!--<![endif]-->
 		<!--[if lte IE 8]>
-		<script type="text/javascript" src="ProbaProbadata/lib/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="Proba12data/lib/jquery-1.11.1.min.js"></script>
 		<![endif]-->
 		<!--[if gt IE 8]>
-		<script type="text/javascript" src="ProbaProbadata/lib/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="Proba12data/lib/jquery-2.1.1.min.js"></script>
 		<![endif]-->
 
 
 		<style type="text/css">
 			div#panoDIV.cursorMoveMode {
 				cursor: move;
-				cursor: url(ProbaProbadata/graphics/cursors_move_html5.cur), move;
+				cursor: url(Proba12data/graphics/cursors_move_html5.cur), move;
 			}
 			div#panoDIV.cursorDragMode {
 				cursor: grab;
 				cursor: -moz-grab;
 				cursor: -webkit-grab;
-				cursor: url(ProbaProbadata/graphics/cursors_drag_html5.cur), default;
+				cursor: url(Proba12data/graphics/cursors_drag_html5.cur), default;
 			}
 		</style>
 
@@ -110,7 +114,7 @@
 				if (isWebVr) {
 					embedpano({
 						id:"krpanoSWFObject"
-						,xml:"ProbaProbadata/ProbaProba_vr.xml"
+						,xml:"Proba12data/Proba12_vr.xml"
 						,target:"panoDIV"
 						,passQueryParameters:true
 						,bgcolor:"#000000"
@@ -124,7 +128,7 @@
 					embedpano({
 						id:"krpanoSWFObject"
 
-						,swf:"ProbaProbadata/ProbaProba.swf"
+						,swf:"Proba12data/Proba12.swf"
 
 						,target:"panoDIV"
 						,passQueryParameters:true
@@ -158,17 +162,19 @@
 	</head>
 	<body>
 		<div id="container">
+			<h1 class="tourTitle">New Project</h1>
+			
 
 			<div id="tourDIV">
 				<div id="panoDIV">
 					<noscript>
 
-						<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="100%" height="100%" id="ProbaProbadata/ProbaProba">
-							<param name="movie" value="ProbaProbadata/ProbaProba.swf"/>
+						<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="100%" height="100%" id="Proba12data/Proba12">
+							<param name="movie" value="Proba12data/Proba12.swf"/>
 							<param name="allowFullScreen" value="true"/>
 							<!--[if !IE]>-->
-							<object type="application/x-shockwave-flash" data="ProbaProbadata/ProbaProba.swf" width="100%" height="100%">
-								<param name="movie" value="ProbaProbadata/ProbaProba.swf"/>
+							<object type="application/x-shockwave-flash" data="Proba12data/Proba12.swf" width="100%" height="100%">
+								<param name="movie" value="Proba12data/Proba12.swf"/>
 								<param name="allowFullScreen" value="true"/>
 								<!--<![endif]-->
 								<a href="http://www.adobe.com/go/getflash">
@@ -182,7 +188,7 @@
 					</noscript>
 				</div>
 
-				<script type="text/javascript" src="ProbaProbadata/ProbaProba.js"></script>
+				<script type="text/javascript" src="Proba12data/Proba12.js"></script>
 				<script type="text/javascript">
 					if (isVRModeRequested()){
 						accessWebVr();
